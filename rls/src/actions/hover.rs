@@ -856,7 +856,7 @@ pub fn tooltip(
                 DefKind::Enum | DefKind::Union | DefKind::Struct | DefKind::Trait => {
                     tooltip_struct_enum_union_trait(&ctx, &def, doc_url)
                 }
-                DefKind::Function | DefKind::Method | DefKind::ForeignFunction => {
+                DefKind::Function | DefKind::Method | DefKind::ForeignFunction | DefKind::Macro => {
                     tooltip_function_method(&ctx, &def, doc_url)
                 }
                 DefKind::Mod => tooltip_mod(&ctx, &def, doc_url),
